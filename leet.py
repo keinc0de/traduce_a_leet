@@ -34,6 +34,12 @@ class Diccionario:
             'y':[[106], [96, 47], [1063], [55], [92, 124, 47], [165], [92, 47, 47]],
             'z':[[50], [55, 95], [45, 47, 95], [37], [62, 95], [115], [126, 47, 95], [45, 92, 95], [45, 124, 95]]
         }
+        self.frases = [
+            'Mira cómo escribo leet',
+            'hola mundo',
+            'Si puedes leer esto, ¡realmente necesitas tener una vida!',
+            'Le gustaba cenar un exquisito sandwich de jamon con zumo de piña y vodka fría'
+        ]
 
     def encode(self, palabra, con_espacio=False):
         pal = palabra.lower().strip()
@@ -48,6 +54,7 @@ class Diccionario:
                 salida = letra
             res.append(salida)
         return sep.join(res)
+    
     
 if __name__=="__main__":
     dic = Diccionario()
