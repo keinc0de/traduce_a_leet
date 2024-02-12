@@ -38,7 +38,9 @@ class Diccionario:
             'Mira cómo escribo leet',
             'hola mundo',
             'Si puedes leer esto, ¡realmente necesitas tener una vida!',
-            'Le gustaba cenar un exquisito sandwich de jamon con zumo de piña y vodka fría'
+            'Le gustaba cenar un exquisito sandwich de jamon con zumo de piña y vodka fría',
+            'mortadela',
+            'Hector'
         ]
 
     def encode(self, palabra, con_espacio=False):
@@ -57,11 +59,3 @@ class Diccionario:
     
     def obten_frase(self):
         return self.frases[randrange(0, len(self.frases))]
-    
-    
-    
-if __name__=="__main__":
-    dic = Diccionario()
-    # res = dic.encode('Si puedes leer esto, ¡realmente necesitas tener una vida!')
-    res = dic.encode('Mira cómo escribo leet')
-    print(res)
