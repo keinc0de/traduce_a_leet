@@ -55,6 +55,10 @@ class Diccionario:
             res.append(salida)
         return sep.join(res)
     
+    def obten_frase(self):
+        return self.frases[randrange(0, len(self.frases))]
+    
+    
     
 if __name__=="__main__":
     dic = Diccionario()
